@@ -1,0 +1,126 @@
+html_form = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rework Tracking Log</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #003366;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .submit-btn {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #0055A4;
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            margin: auto;
+        }
+        .signature {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Pilgrim%27s_Pride_logo.png" alt="Pilgrims Logo" class="logo">
+        <h2>Rework Tracking Log</h2>
+        <form action="https://formsfree.io/f/mdkkjgrr" method="POST">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="shift">Shift:</label>
+                <select id="shift" name="shift" required>
+                    <option value="">-- Select --</option>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="initial_code">Initial Product Code:</label>
+                <input type="text" id="initial_code" name="initial_code" required>
+            </div>
+            <div class="form-group">
+                <label for="label_date">Label Date on Rework:</label>
+                <input type="date" id="label_date" name="label_date" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="rework_code">Rework into Product Code/Condemned:</label>
+                <input type="text" id="rework_code" name="rework_code" required>
+            </div>
+            <div class="form-group">
+                <label>Was it back dated?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="back_dated" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="back_dated" value="No" required> No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="3"></textarea>
+            </div>
+            <div class="form-group signature">
+                <label for="signature">Approval Signature (to be added upon receipt):</label>
+                <input type="text" id="signature" name="signature" placeholder="To be signed upon approval" disabled>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
